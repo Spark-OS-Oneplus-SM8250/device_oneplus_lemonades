@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lemonades.mk
+    $(LOCAL_DIR)/spark_lemonades.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lemonades-user \
-    lineage_lemonades-userdebug \
-    lineage_lemonades-eng
+    spark_lemonades-user \
+    spark_lemonades-userdebug \
+    spark_lemonades-eng

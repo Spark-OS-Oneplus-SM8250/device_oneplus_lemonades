@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Spark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonades
+PRODUCT_NAME := spark_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -24,6 +24,10 @@ PRODUCT_SYSTEM_NAME := OnePlus9R
 PRODUCT_SYSTEM_DEVICE := OnePlus9R
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# SparkOS stuff
+PRODUCT_USES_QCOM_HARDWARE := false
+WITH_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus9R_IND-user 13 RKQ1.211119.001 R.103dfa6-1-58fae release-keys" \
